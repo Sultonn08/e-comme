@@ -1,0 +1,308 @@
+/* ═══════════════════════════════════════════════════════════════
+   CUSTOMER SERVICE & HELP CENTER STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.cs-page {
+  padding-bottom: 60px;
+}
+
+/* ── Hero Banner ── */
+.cs-hero {
+  padding: 48px 0 36px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 40px;
+}
+
+.cs-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 99px;
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.cs-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.35);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.cs-hero h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.cs-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ── Channels Grid (4 Cards) ── */
+.cs-channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.cs-channel-card {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cs-channel-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--ink);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cs-channel-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.cs-channel-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cs-channel-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+  flex: 1;
+}
+
+.cs-channel-action {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2F7DF6;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Two-Column Layout ── */
+.cs-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .cs-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ── Form Card ── */
+.cs-form-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.cs-form-header {
+  margin-bottom: 24px;
+}
+
+.cs-form-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.cs-form-header p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.cs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cs-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.cs-form input,
+.cs-form select,
+.cs-form textarea {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.cs-form input:focus,
+.cs-form select:focus,
+.cs-form textarea:focus {
+  border-color: #2F7DF6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(47, 125, 246, 0.15);
+}
+
+.cs-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.cs-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 24px;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.cs-submit-btn:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+.cs-form-hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+/* ── Sidebar Right (Stores & FAQ) ── */
+.cs-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.cs-info-box {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px;
+}
+
+.cs-info-box h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cs-stores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-store-item {
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.cs-store-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-store-item p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* ── Quick FAQ ── */
+.cs-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-faq-item {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.cs-faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cs-faq-q {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-faq-a {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.45;
+}

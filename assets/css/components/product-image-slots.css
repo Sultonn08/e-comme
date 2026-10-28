@@ -1,0 +1,17 @@
+.product-image-manager{min-width:0;padding:17px;border:1px solid var(--line);border-radius:10px}
+.product-image-manager legend{padding:0 7px;font-weight:800}
+.product-image-manager>.hint{margin:0 0 14px;font-size:.85rem}
+.product-image-slots{display:grid;gap:10px}
+.product-image-slot{display:grid;grid-template-columns:68px minmax(120px,1fr) auto auto;align-items:center;gap:12px;padding:10px;border:1px solid var(--line);border-radius:9px;background:var(--card)}
+.product-image-preview{display:grid;width:68px;height:68px;place-items:center;overflow:hidden;border-radius:6px;background:var(--soft);color:var(--muted);font-size:.68rem;text-align:center}
+.product-image-preview img{width:100%;height:100%;object-fit:cover}
+.product-image-slot-info{display:grid;gap:3px;min-width:0}
+.product-image-slot-info strong{font-size:.86rem}
+.product-image-slot-info small{overflow-wrap:anywhere;color:var(--muted);font-size:.75rem}
+.product-image-select{position:relative;display:inline-flex;min-height:36px;align-items:center;justify-content:center;padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--bg);font-size:.78rem;font-weight:700;cursor:pointer}
+.product-image-select:hover{border-color:var(--ink)}
+.product-image-select input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.product-image-select:focus-within{outline:3px solid rgba(47,125,246,.3);outline-offset:2px}
+.product-image-upload{min-height:36px;padding:7px 12px;border:0;border-radius:7px;background:var(--ink);color:var(--bg);font:700 .78rem "Archivo",system-ui,sans-serif;cursor:pointer}
+.product-image-upload:disabled{cursor:not-allowed;opacity:.45}
+@media(max-width:540px){.product-image-slot{grid-template-columns:54px minmax(0,1fr) auto;gap:9px}.product-image-preview{width:54px;height:54px}.product-image-slot-info{grid-column:2}.product-image-select{grid-column:3;grid-row:1}.product-image-upload{grid-column:2/4;grid-row:2}}

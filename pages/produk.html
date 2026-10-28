@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Produk - Sandang Kota</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261023">
+    <link rel="stylesheet" href="../assets/css/components/header.css?v=20261023">
+    <link rel="stylesheet" href="../assets/css/components/footer.css?v=20261023">
+</head>
+
+<body data-page="produk">
+    <header id="hdr"></header>
+    <main class="wrap">
+        <section>
+            <h2 data-content="products.title">Semua produk</h2>
+            <div class="bar"><select id="sort" aria-label="Urutkan">
+                    <option value="" data-content="products.sort_latest">Urutkan: terbaru</option>
+                    <option value="lo" data-content="products.sort_low">Harga terendah</option>
+                    <option value="hi" data-content="products.sort_high">Harga tertinggi</option>
+                </select></div>
+            <div id="chips"></div>
+            <div class="grid" id="list"></div>
+        </section>
+    </main>
+    <dialog id="product-detail" class="product-dialog" aria-label="Detail produk"></dialog>
+    <footer id="ftr"></footer>
+    <script src="../assets/js/components/header.js?v=20261023"></script>
+    <script src="../assets/js/components/footer.js?v=20261023"></script>
+    <script src="../assets/js/script.js?v=20261023"></script>
+</body>
+
+</html>

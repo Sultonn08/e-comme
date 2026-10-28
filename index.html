@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>ERIGO STORE - Fashion kasual urban</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261023d">
+    <link rel="stylesheet" href="assets/css/components/header.css?v=20261023">
+    <link rel="stylesheet" href="assets/css/components/footer.css?v=20261023">
+    <link rel="stylesheet" href="assets/css/inline-editor.css?v=20261023">
+    <link rel="stylesheet" href="assets/css/components/product-image-slots.css?v=20261023">
+</head>
+
+<body data-page="home">
+    <header id="hdr"></header>
+    <main>
+        <!-- ══ ANIMATED HERO BANNER SLIDER ══ -->
+        <section class="hero-slider-section" aria-label="Banner Promo Utama">
+            <div class="hero-slider" id="hero-slider">
+                <div class="hero-slide active" style="background-image: linear-gradient(to right, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.78) 100%), url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1600&q=80');">
+                    <div class="wrap hero-slide-content">
+                        <span class="hero-tag">Special Release</span>
+                        <h1 data-content="home.hero_title">Koleksi baru: cargo dan parka</h1>
+                        <p data-content="home.hero_text">Bahan lentur, adem, dan ringan untuk aktivitas seharian. Gratis ongkir ke seluruh Indonesia.</p>
+                        <a class="btn inv hero-cta" data-content="home.hero_button" href="pages/produk.html?kat=Baru">Belanja sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <button class="hero-slider-nav hero-prev" id="hero-prev" type="button" aria-label="Banner sebelumnya">&#8249;</button>
+            <button class="hero-slider-nav hero-next" id="hero-next" type="button" aria-label="Banner berikutnya">&#8250;</button>
+            <div class="hero-dots" id="hero-dots" aria-label="Navigasi slide banner"></div>
+        </section>
+        <div class="wrap">
+            <section>
+                <div class="cats" id="home-categories">
+                    <a class="cat" href="pages/produk.html?kat=Atasan">
+                        <img class="cat-bg" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Atasan" loading="lazy">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <span class="cat-title">Atasan</span>
+                            <span class="cat-sub">Kaos dan kemeja</span>
+                            <span class="cat-badge">Jelajahi &rarr;</span>
+                        </div>
+                    </a>
+                    <a class="cat" href="pages/produk.html?kat=Bawahan">
+                        <img class="cat-bg" src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80" alt="Bawahan" loading="lazy">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <span class="cat-title">Bawahan</span>
+                            <span class="cat-sub">Chino, cargo, jogger</span>
+                            <span class="cat-badge">Jelajahi &rarr;</span>
+                        </div>
+                    </a>
+                    <a class="cat" href="pages/produk.html?kat=Aksesori">
+                        <img class="cat-bg" src="https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=800&q=80" alt="Aksesori" loading="lazy">
+                        <div class="cat-overlay"></div>
+                        <div class="cat-content">
+                            <span class="cat-title">Aksesori</span>
+                            <span class="cat-sub">Topi dan tas</span>
+                            <span class="cat-badge">Jelajahi &rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h2 data-content="home.latest_title">Terbaru di Sandang Kota</h2>
+                <div class="grid" id="terbaru"></div>
+                <p style="margin-top:20px"><a class="btn" data-content="home.all_products" href="pages/produk.html">Lihat semua produk</a></p>
+            </section>
+            <section>
+                <h2 data-content="home.perks_title">Kenapa belanja di website kami</h2>
+                <div class="perks">
+                    <div>
+                        <h3 data-content="home.shipping_title">Gratis ongkir</h3>
+                        <p data-content="home.shipping_text">Semua pesanan dikirim tanpa biaya ongkir.</p>
+                    </div>
+                    <div>
+                        <h3 data-content="home.returns_title">Jaminan return dan refund</h3>
+                        <p data-content="home.returns_text">Salah ukuran? Tukar atau kembalikan dalam 7 hari.</p>
+                    </div>
+                    <div>
+                        <h3 data-content="home.voucher_title">Voucher otomatis</h3>
+                        <p data-content="home.voucher_text">Diskon Rp10.000 min belanja Rp150.000, dan Rp20.000 min Rp250.000.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 data-content="home.blog_title">Artikel dan referensi</h2>
+                <div class="posts" id="blog"></div>
+            </section>
+        </div>
+    </main>
+    <dialog id="product-detail" class="product-dialog" aria-label="Detail produk"></dialog>
+    <aside class="inline-admin-toolbar" id="inline-admin-toolbar" aria-label="Alat edit halaman" hidden>
+        <div class="inline-admin-status">
+            <span class="inline-admin-indicator" aria-hidden="true"></span>
+            <div><strong>Mode admin</strong><span id="inline-admin-message" role="status">Edit konten langsung di halaman ini.</span></div>
+        </div>
+        <div class="inline-admin-actions">
+            <button class="inline-admin-button" id="inline-add-product" type="button">Tambah produk</button>
+            <button class="inline-admin-button inline-admin-primary" id="inline-save" type="button" disabled>Simpan perubahan</button>
+            <button class="inline-admin-button" id="inline-cancel" type="button">Batal</button>
+            <a class="inline-admin-button inline-admin-link" href="admin/index.php">Dashboard</a>
+        </div>
+    </aside>
+    <dialog class="inline-product-editor" id="inline-product-editor">
+        <form id="inline-product-form">
+            <div class="inline-editor-heading">
+                <div><p class="inline-editor-eyebrow">Kelola katalog</p><h2 id="inline-product-title">Tambah produk</h2></div>
+                <button class="inline-editor-close" id="inline-product-close" type="button" aria-label="Tutup">×</button>
+            </div>
+            <input type="hidden" name="id">
+            <label>Nama produk<input name="nama" maxlength="160" required></label>
+            <div class="inline-product-fields">
+                <label>Tipe<input name="tipe" maxlength="100" required></label>
+                <label>Kategori<select name="kat" required><option>Atasan</option><option>Bawahan</option><option>Outer</option><option>Aksesori</option></select></label>
+            </div>
+            <div class="inline-product-fields">
+                <label>Harga jual (Rp)<input name="harga" type="number" min="1" step="1000" required></label>
+                <label>Harga normal (Rp)<input name="harga_normal" type="number" min="1" step="1000" required></label>
+            </div>
+            <label>Warna kartu<input name="warna" type="color" value="#1C1C1E" required></label>
+            <label>Deskripsi<textarea name="deskripsi" rows="3" maxlength="2000"></textarea></label>
+            <input type="hidden" name="gambar" value="[]">
+            <fieldset class="product-image-manager">
+                <legend>Foto produk per tampilan</legend>
+                <p class="hint">Pilih dan unggah foto terpisah untuk tampilan depan, belakang, detail bahan, dan detail produk.</p>
+                <div class="product-image-slots" id="inline-image-slots"></div>
+            </fieldset>
+            <label class="inline-product-checkbox"><input name="baru" type="checkbox"> Tampilkan di koleksi baru</label>
+            <p class="inline-product-message" id="inline-product-message" role="status"></p>
+            <div class="inline-product-actions"><button class="inline-admin-button" id="inline-product-cancel" type="button">Batal</button><button class="inline-admin-button inline-admin-primary" type="submit">Simpan produk</button></div>
+        </form>
+    </dialog>
+    <footer id="ftr"></footer>
+    <script src="assets/js/components/header.js?v=20261023"></script>
+    <script src="assets/js/components/footer.js?v=20261023"></script>
+    <script src="assets/js/script.js?v=20261023d"></script>
+    <script src="assets/js/components/product-image-slots.js"></script>
+    <script src="assets/js/inline-editor.js"></script>
+</body>
+
+</html>

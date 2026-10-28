@@ -1,0 +1,8 @@
+<?php
+return [
+    'DB_HOST' => '127.0.0.1',
+    'DB_PORT' => '3306',
+    'DB_NAME' => 'sandang_kota',
+    'DB_USER' => 'isi_user_database',
+    'DB_PASSWORD' => 'isi_password_database',
+];

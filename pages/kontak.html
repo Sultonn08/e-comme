@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title data-content="contact.page_title">Customer Service & Pusat Bantuan — ERIGO STORE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261023">
+    <link rel="stylesheet" href="../assets/css/components/header.css?v=20261023">
+    <link rel="stylesheet" href="../assets/css/components/footer.css?v=20261023">
+    <link rel="stylesheet" href="../assets/css/contact.css?v=20261023">
+</head>
+
+<body data-page="kontak">
+    <header id="hdr"></header>
+    
+    <main class="wrap cs-page">
+        <!-- ══ CS HERO BANNER ══ -->
+        <section class="cs-hero">
+            <div class="cs-status-badge">
+                <span class="cs-dot"></span>
+                <span>Layanan Aktif · Jam Operasional 10.00 – 21.00 WIB</span>
+            </div>
+            <h1 data-content="contact.page_title">Customer Service & Pusat Bantuan</h1>
+            <p>Punya pertanyaan seputar ukuran produk, pengiriman, pesanan, atau penukaran barang? Tim Customer Service kami siap membantu Anda dengan cepat.</p>
+        </section>
+
+        <!-- ══ QUICK SUPPORT CHANNELS (4 CARDS) ══ -->
+        <section class="cs-channels" aria-label="Saluran Bantuan">
+            <a class="cs-channel-card" href="https://wa.me/6287861553558?text=Halo%20Customer%20Service%2C%20saya%20butuh%20bantuan" target="_blank" rel="noopener noreferrer">
+                <span class="cs-channel-icon">💬</span>
+                <h3 class="cs-channel-title">WhatsApp CS</h3>
+                <p class="cs-channel-desc">Respon instan untuk konsultasi ukuran, kendala pembayaran, atau konfirmasi order.</p>
+                <span class="cs-channel-action">Chat Sekarang &rarr;</span>
+            </a>
+
+            <div class="cs-channel-card">
+                <span class="cs-channel-icon">📦</span>
+                <h3 class="cs-channel-title">Status Pesanan</h3>
+                <p class="cs-channel-desc">Lacak nomor resi atau konfirmasi pengiriman barang Anda ke seluruh Indonesia.</p>
+                <span class="cs-channel-action">Tanyakan Resi</span>
+            </div>
+
+            <div class="cs-channel-card">
+                <span class="cs-channel-icon">🔄</span>
+                <h3 class="cs-channel-title">Garansi Tukar 7 Hari</h3>
+                <p class="cs-channel-desc">Salah pilih ukuran? Nikmati kemudahan retur atau tukar ukuran dalam waktu 7 hari.</p>
+                <span class="cs-channel-action">Kebijakan Retur</span>
+            </div>
+
+            <div class="cs-channel-card">
+                <span class="cs-channel-icon">📍</span>
+                <h3 class="cs-channel-title">Toko Resmi Offline</h3>
+                <p class="cs-channel-desc">Ingin mencoba fitting langsung? Kunjungi gerai resmi kami di Jakarta dan Bandung.</p>
+                <span class="cs-channel-action">Lihat Lokasi</span>
+            </div>
+        </section>
+
+        <!-- ══ TWO COLUMN CONTENT: FORM & SIDEBAR ══ -->
+        <div class="cs-layout">
+            
+            <!-- Kolom Kiri: Form Pesan CS -->
+            <section class="cs-form-card" aria-label="Formulir Customer Service">
+                <div class="cs-form-header">
+                    <h2 data-content="contact.heading">Kirim Pesan ke Customer Service</h2>
+                    <p>Lengkapi formulir berikut untuk langsung terhubung dengan tim customer service kami via WhatsApp.</p>
+                </div>
+
+                <form id="f" class="cs-form">
+                    <label>
+                        <span data-content="contact.name">Nama Lengkap</span>
+                        <input name="nama" type="text" placeholder="Masukkan nama lengkap Anda" required>
+                    </label>
+
+                    <label>
+                        <span>Nomor WhatsApp / HP</span>
+                        <input name="telepon" type="tel" placeholder="Contoh: 08123456789">
+                    </label>
+
+                    <label>
+                        <span>Topik Bantuan</span>
+                        <select name="topik">
+                            <option value="Tanya Status & Resi Pesanan">Tanya Status & Resi Pesanan</option>
+                            <option value="Konsultasi Ukuran & Produk">Konsultasi Ukuran & Produk</option>
+                            <option value="Penukaran / Retur Barang">Penukaran / Retur Barang</option>
+                            <option value="Konfirmasi Pembayaran">Konfirmasi Pembayaran</option>
+                            <option value="Kerja Sama / Partnership">Kerja Sama / Partnership</option>
+                            <option value="Pertanyaan Umum Lainnya" selected>Pertanyaan Umum Lainnya</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span data-content="contact.message">Detail Pertanyaan / Kendala</span>
+                        <textarea name="pesan" rows="4" placeholder="Tuliskan kendala atau pertanyaan Anda secara rinci..." required></textarea>
+                    </label>
+
+                    <button class="cs-submit-btn" id="contact-submit-btn" type="submit">
+                        <span>💬</span>
+                        <span data-content="contact.submit">Kirim ke WhatsApp CS</span>
+                    </button>
+                    <p class="cs-form-hint">Pesan Anda akan otomatis terformat rapi dan langsung diteruskan ke WhatsApp resmi toko kami.</p>
+                </form>
+            </section>
+
+            <!-- Kolom Kanan: Store Locations & Quick FAQ -->
+            <aside class="cs-sidebar">
+                
+                <!-- Outlet Toko Fisik -->
+                <div class="cs-info-box">
+                    <h2 data-content="contact.locations">🏬 Outlet & Toko Resmi</h2>
+                    <div class="cs-stores-list">
+                        <div class="cs-store-item">
+                            <h3 data-content="contact.jakarta_name">📍 ERIGO Official Store Jakarta</h3>
+                            <p data-content="contact.jakarta_address">Jl. Senopati Raya No. 18, Jakarta Selatan. Buka setiap hari 10.00 – 22.00 WIB.</p>
+                        </div>
+                        <div class="cs-store-item">
+                            <h3 data-content="contact.bandung_name">📍 ERIGO Official Store Bandung</h3>
+                            <p data-content="contact.bandung_address">Jl. Riau No. 42, Citarum, Bandung. Buka setiap hari 10.00 – 22.00 WIB.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bantuan Populer (FAQ) -->
+                <div class="cs-info-box">
+                    <h2>❓ Bantuan Cepat</h2>
+                    <div class="cs-faq-list">
+                        <div class="cs-faq-item">
+                            <div class="cs-faq-q">🚚 Berapa lama estimasi pengiriman?</div>
+                            <div class="cs-faq-a">Pesanan Jabodetabek tiba dalam 1–2 hari kerja, kota lain 2–4 hari kerja dengan ekspedisi rekanan.</div>
+                        </div>
+                        <div class="cs-faq-item">
+                            <div class="cs-faq-q">👕 Bagaimana prosedur tukar ukuran?</div>
+                            <div class="cs-faq-a">Hubungi CS kami dalam batas 7 hari setelah barang diterima. Pastikan tag dan label produk masih utuh.</div>
+                        </div>
+                        <div class="cs-faq-item">
+                            <div class="cs-faq-q">💳 Metode pembayaran apa saja?</div>
+                            <div class="cs-faq-a">Kami menerima Transfer Bank, QRIS, dan pemesanan langsung lewat WhatsApp dengan konfirmasi instan.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <footer id="ftr"></footer>
+
+    <script src="../assets/js/components/header.js?v=20261023"></script>
+    <script src="../assets/js/components/footer.js?v=20261023"></script>
+    <script src="../assets/js/script.js?v=20261023"></script>
+</body>
+
+</html>

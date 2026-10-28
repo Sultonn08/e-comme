@@ -1,0 +1,12 @@
+.account-header{position:static}
+.account-main{min-height:65vh;display:grid;place-items:start center;padding-top:48px}
+.account-card{width:min(100%,520px);padding:28px;background:var(--soft);border-radius:8px}
+.account-card h1{font-size:1.8rem;margin-bottom:8px}
+.account-tabs{display:flex;gap:8px;margin:20px 0}
+.account-tabs .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.account-card form{max-width:none}
+.account-card .btn{width:100%}
+.account-card .btn-secondary{margin-top:14px;background:transparent;color:var(--ink);border:1px solid var(--line)}
+.form-message{margin-top:14px}
+.form-message.is-error{color:var(--sale)}
+[hidden]{display:none!important}

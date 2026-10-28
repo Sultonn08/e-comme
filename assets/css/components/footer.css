@@ -1,0 +1,9 @@
+footer{background:#111;color:#CFCFCF;margin-top:40px;padding:36px 0 20px;font-size:.92rem}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px}
+footer h3{color:#fff;font-size:1rem;margin-bottom:8px}
+footer a{display:block;text-decoration:none;padding:2px 0}
+footer a:hover{color:#fff}
+#nl{display:flex;gap:8px;max-width:none}
+#nl input{min-width:0}
+#nl .btn{background:#fff;color:#111}
+.copy{margin-top:24px;border-top:1px solid #333;padding-top:14px;font-size:.85rem}
